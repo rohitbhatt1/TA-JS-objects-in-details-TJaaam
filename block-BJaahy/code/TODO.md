@@ -208,11 +208,13 @@ class User{
     constructor(firstName,lastName){
         this.firstName = firstName;
         this.lastName = lastName;
+        this.numberOfTimes = 0;
     }
     get fullName(){
         return this.firstName+" "+this.lastName;
     }
     set fullName(fullName){
+        this.numberOfTimes++;
         if(fullName.length < 5){
             alert(`Full name should be more than 5 characters`)
         }else{
@@ -351,3 +353,63 @@ let user1 = new User("Rohit","Bhatt")
 // true
 // user12.nameContains("Rohi")
 // false
+
+
+<!-- 
+// feedback video
+/*
+class square {
+    constructor(side){
+        this.width = side;
+        this.height = side;
+        this.numberOfTimes = 0;
+    }
+    description() {
+        alert (`The Square is ${this.width} x ${this.height}`)
+    }
+      calcArea() {
+        return this.width * this.height;
+    }
+         get area() {
+             if(this.numberOfTimes >= 4){
+                 alert(`Upper Limit Reached`)
+             } else{
+                 return this.width * this.height;
+             }
+     set area(value) {
+      let side = Math.sqrt(value);
+        this.width = side;
+         this.width = side;
+             }
+             
+    static isEqual(a,b){
+            return a.area === b.area;
+    }   
+}
+
+
+
+let square1 = new square(400);//
+undefined
+square1
+square {width: 400, height: 400, numberOfTimes: 0}//
+
+
+
+
+let square1 = new square(200);
+undefined
+let square2 = new square(100);
+undefined
+square1.area
+40000
+square1.area
+40000
+square1.area
+40000
+square1.area
+undefined
+square1.area
+    
+
+*/ -->
