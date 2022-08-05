@@ -413,3 +413,39 @@ square1.area
     
 
 */ -->
+
+
+<!-- 2 questiob -->
+<!-- 
+class User {
+     constructor (firstName , lastName){
+         this.firstName = firstName;
+         this.lastName  = lastName;
+     }
+    get fullName(){
+         return `${this.firstName} ${this.lastName}`
+    }
+    set fullName(name){
+        if(name.length < 5){
+            alert (`Full name should be more than 5  characters`)
+        }else{            
+        let firstName = name.split(' ')[0];
+        let lastName = name.split(' ')[1];
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    }
+    nameContains(str){
+        return `${this.firstName} ${this.lastName}`.includes(str);
+    }
+         
+}
+undefined
+let user1 = new User('john', 'stark');
+undefined
+user1.nameContains(' '); 
+true
+user1.nameContains('jo'); 
+true
+user1.nameContains('m'); 
+false -->
