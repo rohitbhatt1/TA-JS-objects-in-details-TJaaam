@@ -265,11 +265,11 @@ class User{
         }
     }
 }
-let user1 = new User("Anand","Seshadri") 
+let user1 = new User("Kashish","Sharma") 
 // test cases
 // user1.nameContains("re")
 // false
-// user1.nameContains("es")
+// user1.nameContains("hi")
 // true
 
 - Create two instance of the `User` class
