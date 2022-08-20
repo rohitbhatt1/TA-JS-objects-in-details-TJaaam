@@ -76,11 +76,11 @@ let dogMethods = {
         alert `I am ${this.name} and I can bark 🐶`;
     },
     changeName(newName) {
-         this.name = this.name + newName;
+         this.name = newName;
          return this.name;
     },
     changeColor(newColor) {
-        this.color = this.name + newColor;
+        this.color = newColor;
         return this.color;
    },
    summary() {
