@@ -6,12 +6,12 @@ let todos = [
 
 
 let handleChange = (event)=>{
-  console.log(event.target.value, event.keyCode)
+  // console.log(event.target.value, event.keyCode)
      if(event.keyCode === 13){
       let todo = {
         id: Date.now(),
         title: event.target.value,
-        isDone: false
+        isDone:false,
        }
         todos.push(todo);
         event.target.value = '';
