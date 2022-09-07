@@ -36,8 +36,7 @@ class MyBooks {
       let span = document.createElement("span");
       span.innerText = "❌";
       span.addEventListener("click", book.handleDelete.bind(this, book.id));
-
-      li.append(pName, pAuthor, pISBN, input, span);
+           li.append(pName, pAuthor, pISBN, input, span);
       bookListRoot.append(li);
     });
   }
