@@ -1,7 +1,7 @@
 We will be creating a quiz app in this section step-by-step. Follow the steps below and complete on by one
 
 1. Quiz is a collection of Questions.
-2. Question will need `Title`, `Options` and `Correct Answer`
+2. Question will need `Title`, `Options` and `Correct Answer` 
 
 ### Make a Question class with these data and methods:
 
@@ -14,6 +14,7 @@ DATA:
 METHODS:
 
 - isCorrect(answer)
+
 
 Check if the given answer is correct or not. It will accept one answer and return `true` is the answer is correct otherwise false.
 
